@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Template.</title>
+        <link rel="icon" type="image/x-icon" href="https://whereofthereofmedia.s3.amazonaws.com/favicon.ico" />
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/style.css" media="screen" />
+        <link href="http://fonts.googleapis.com/css?family=Roboto:300|Roboto+Slab:300" rel='stylesheet' type='text/css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="∃x (x)"/>
+        <link rel="author" href="https://plus.google.com/+robsafar"/>
+        <meta property="og:image" content="https://whereofthereofmedia.s3.amazonaws.com/desktop.jpg"/>
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:creator" content="@robsafar"/>
+        <meta name="twitter:title" content="Whereof, Thereof."/>
+        <meta name="twitter:description" content="Where was this photo taken? Was I in 'cyberspace' when I took it? Where is the photo now? In cyberspace? Or on your screen, in your presence?"/>
+        <meta name="twitter:image:src" content="https://whereofthereofmedia.s3.amazonaws.com/desktop.jpg"/>
+        <!-- Google Analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+             ga('create', 'UA-50409670-1', 'thereof.co.uk');
+             ga('send', 'pageview');
+        </script>
+        <script>
+            function mailTrick()
+            {
+                var strlink = document.getElementById("emailme").href;
+                var reslink = strlink.replace("spam.","");
+                document.getElementById("emailme").href=reslink;
+                var strtext = document.getElementById("emailme").innerHTML;
+                var restext = strtext.replace("spam.","");
+                document.getElementById("emailme").innerHTML=restext;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="home">
+                <h2><a href="http://whereof.thereof.co.uk"><span class="glyphicon glyphicon-home"></span>&nbsp;&forall;<em>x</em> (&exist;<em>x</em>)</a></h2>
+            </div>
+        </div>
+        <div class="full-hero">
+            <div class="column center" style="background-image: url('https://whereofthereofmedia.s3.amazonaws.com/reflection.jpg');">
+                <h1>Template.</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row clearfix">
+                <p>Body text, et cetera.</p>
+            </div>
+        </div>
+        <div id="footer"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+        <script>
+            $("#footer").load("footer.html");
+        </script>
+        <!-- Google Tag Manager -->
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WND96B"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                                                             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                 })(window,document,'script','dataLayer','GTM-WND96B');</script>
+    </body>
+</html>

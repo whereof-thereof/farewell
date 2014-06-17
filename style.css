@@ -1,0 +1,144 @@
+    /*  Basic responsive styles  */
+    
+html, body {
+  height: 100%;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*  Small screens (default)  */
+html { font-size: 100%; }
+/*  Medium screens (640px)  */
+@media (min-width: 40rem) { 
+  html { font-size: 112%; }
+}
+/*  Large screens (1024px)  */
+@media (min-width: 64rem) { 
+  html { font-size: 120%; }
+}
+
+.container {
+  margin: 0 auto;
+}
+.row {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+.column {
+  padding: 10px;
+}
+
+@media (min-width: 40rem) {
+  .column {
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .column.full { width: 100%; }
+  .column.two-thirds { width: 66.7%; }
+  .column.half { width: 50%; }
+  .column.third { width: 33.3%; }
+  .column.fourth { width: 25%; }
+  .column.flow-opposite { float: right; }  
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+@media (min-width: 40rem) {
+  .column .flow-opposite { float: right; }
+}
+
+    /*  Basic page layout  */
+
+#header, #footer {
+  text-align: center;
+}
+
+#header .home {
+  position: absolute;
+  float: left;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  font-family: 'Georgia', serif;
+  margin-left: 20px;
+}
+#header .home a {
+  color: #fff;
+  text-decoration: none;
+}
+#header .home a:hover {
+  color: #eee;
+}
+
+.full-hero {
+  min-height: 90%;
+  position: relative;
+}
+.full-hero .column {
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+}
+.full-hero .column h1 {
+  margin-top: 200px;
+}
+
+.card { 
+  border: solid 1px #ccc; 
+  box-shadow: 3px 3px 2px #ccc;
+}
+
+/*  Menu layout  */
+
+ul.horizontal-ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+}
+ul.horizontal-ul li {
+  display: inline;
+  padding: 10px;
+}
+ul.horizontal-ul img {
+  width: 40px;
+  height: 40px;
+}
+
+    /*  Typography  */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2em;
+}
+h2 { font-size: 1.7em; }
+h3 { font-size: 1.4em; }
+
+.center { text-align: center; }

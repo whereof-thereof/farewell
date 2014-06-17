@@ -4,10 +4,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Template.</title>
+        <title>Farewell, Alistair!</title>
         <link rel="icon" type="image/x-icon" href="https://whereofthereofmedia.s3.amazonaws.com/favicon.ico" />
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="/style.css" media="screen" />
+        <link rel="stylesheet" href="style.css" media="screen" />
         <link href="http://fonts.googleapis.com/css?family=Roboto:300|Roboto+Slab:300" rel='stylesheet' type='text/css'>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="∃x (x)"/>
@@ -28,11 +28,26 @@
              ga('create', 'UA-50409670-1', 'thereof.co.uk');
              ga('send', 'pageview');
         </script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script>
+		var $container = $('#container');
+		// init
+		$container.isotope({
+		  // options
+		  itemSelector: '.item',
+		  layoutMode: 'fitRows'
+		});
+	</script>
+	<style>
+		.item { width: 400px; }
+	</style>
     </head>
     <body>
         <div class="full-hero">
             <div class="column center" style="background-image: url('https://whereofthereofmedia.s3.amazonaws.com/reflection.jpg');">
-                <h1>Farewell!</h1>
+                <h1>Farewell, Alistair!</h1>
             </div>
         </div>
 	<div class="column">
@@ -43,9 +58,10 @@
 			<p>Together, we're saying a very fond farewell to Alistair Alexander, Digital Manager extraordinaire and now the Director of Publishing and Production with Tactical Tech.</p>
 		</div>
 	</div>
-        <div id="footer"></div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-
+	<div class="column" id="container">
+		<div class="item read quote">
+			<blockquote>Alistair – many thanks for your years of support to the ICT. Our digital function has come a long way due to your skill, perseverance, and diplomacy! Good luck in your next role!</blockquote><p>- Ryan</p>
+		</div>
+	</div>
     </body>
 </html>

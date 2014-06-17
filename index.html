@@ -12,14 +12,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="∃x (x)"/>
         <link rel="author" href="https://plus.google.com/+robsafar"/>
-        <meta property="og:image" content="https://whereofthereofmedia.s3.amazonaws.com/desktop.jpg"/>
+        <meta property="og:image" content="https://whereofthereofmedia.s3.amazonaws.com/Alistair.jpg"/>
         <!-- Twitter Card -->
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:creator" content="@robsafar"/>
         <meta name="twitter:title" content="Whereof, Thereof."/>
         <meta name="twitter:description" content="Where was this photo taken? Was I in 'cyberspace' when I took it? Where is the photo now? In cyberspace? Or on your screen, in your presence?"/>
-        <meta name="twitter:image:src" content="https://whereofthereofmedia.s3.amazonaws.com/desktop.jpg"/>
+        <meta name="twitter:image:src" content="https://whereofthereofmedia.s3.amazonaws.com/Alistair.jpg"/>
         <!-- Google Analytics -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -28,18 +30,6 @@
              ga('create', 'UA-50409670-1', 'thereof.co.uk');
              ga('send', 'pageview');
         </script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/isotope.pkgd.min.js"></script>
-	<script>
-		var $container = $('#container');
-		// init
-		$container.isotope({
-		  // options
-		  itemSelector: '.item',
-		  layoutMode: 'fitRows'
-		});
-	</script>
 	<style>
 		.item { width: 450px; }
 		.item.vine {width: 320px; }
@@ -47,18 +37,22 @@
     </head>
     <body>
         <div class="full-hero">
-            <div class="column center" style="background-image: url('https://whereofthereofmedia.s3.amazonaws.com/reflection.jpg');">
+            <div class="column center" style="background-image: url('https://whereofthereofmedia.s3.amazonaws.com/Alistair.jpg');">
                 <h1>Farewell, Alistair!</h1>
             </div>
         </div>
-	<div class="column">
+	<div class="column clearfix">
 		<div class="third flow-opposite">
-			<img src="http://static.guim.co.uk/sys-images/Global/content/icons/2011/11/14/1321314672491/alistairalexander_140x140.jpg">
+			<img src="http://static.guim.co.uk/sys-images/Global/content/icons/2011/11/14/1321314672491/alistairalexander_140x140.jpg" />
+            <p><sub>Alistair looking smug after being<br>published in The Guardian. Oo-er!</sub></p>
 		</div>
 		<div class="two-thirds">
 			<p>Together, we're saying a very fond farewell to Alistair Alexander, Digital Manager extraordinaire and now the Director of Publishing and Production with Tactical Tech.</p>
+            <p>As so many of his colleagues are dispersed far across the globe - and as a Digital pro deserves a Digital send off - we've put together this kinda-but-not-quite-an-e-card.</p>
+            <p>Alistair - to ensure that this isn't some ephemeral gesture no more permanent than a tweet, you can <a href="https://github.com/whereof-thereof/farewell" title="Download or fork this page on GitHub">download this page via the GitHub repository</a> that hosts it. It will work as a stand-alone site.</p>
 		</div>
 	</div>
+    <div class="column"></div>
 	<div id="container">
 		<div class="item watch vine">
 			<iframe class="vine-embed" src="https://vine.co/v/MIQX0Zj1qqD/embed/postcard" width="320" height="320" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
@@ -67,5 +61,15 @@
 			<blockquote>Alistair – many thanks for your years of support to the ICT. Our digital function has come a long way due to your skill, perseverance, and diplomacy! Good luck in your next role!</blockquote><p>- Ryan</p>
 		</div>
 	</div>
+    <script src="js/bootstrap.min.js"></script>
+	<script>
+        var container = document.querySelector('#container');
+        // init
+        var iso = new Isotope( container, {
+                              // options
+                              itemSelector: '.item',
+                              layoutMode: 'fitRows'
+                              });
+    </script>
     </body>
 </html>

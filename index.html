@@ -54,7 +54,9 @@
 		<p>Together, we're saying a very fond farewell to Alistair Alexander, Digital Manager extraordinaire and now the Director of Publishing and Production with Tactical Tech.</p>
             	<p>As so many of his colleagues are dispersed far across the globe - and as a Digital pro deserves a Digital send off - we've put together this kinda-but-not-quite-an-e-card.</p>
             	<p>Alistair - to ensure that this isn't some ephemeral gesture no more permanent than a tweet, you can <a href="https://github.com/whereof-thereof/farewell" title="Download or fork this page on GitHub">download this page via the GitHub repository</a> that hosts it. It will work as a stand-alone site.</p>
-            	<p>Filter: Take&nbsp;Action&nbsp;|&nbsp;<a href="#top" onclick="$container.isotope({ filter: '.intro, .quote' })">Read</a>&nbsp;|&nbsp;Watch</p>
+            		<div id="filters">
+            			<p>Filter: <a href="#top" data-filter="*">All</a>&nbsp;|&nbsp;Take&nbsp;Action&nbsp;|&nbsp;<a href="#top" data-filter=".intro, .quote">Read</a>&nbsp;|&nbsp;Watch</p>
+            		</div>
 		</div>
 		<div class="item watch vine">
 			<iframe class="vine-embed" src="https://vine.co/v/MIQX0Zj1qqD/embed/postcard" width="320" height="320" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
@@ -83,6 +85,13 @@
                               layoutMode: 'fitRows',
                               columnWidth: 300
                               });
+
+        // filter items when filter link is clicked
+	$('#filters a').click(function(){
+	  var selector = $(this).attr('data-filter');
+	  $container.isotope({ filter: selector });
+	  return false;
+	});
     </script>
     </body>
 </html>

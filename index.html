@@ -33,10 +33,10 @@
 	<style>
 		body { width: 100%; }
 		.item { width: 450px; max-width: 100%; overflow: hidden; padding: 5px; }
-		.item.intro { width: 95%; border-bottom: 1px solid #000; }
+		.item.intro { width: 100%; border-bottom: 1px solid #000; }
 		.item.quote p { text-align: right; }
-		.item.vine { width: 320px; }
-		.item.instagram { width: 612px; }
+		.item.vine { width: 300px; }
+		.item.instagram { width: 300px; }
 	</style>
     </head>
     <body>
@@ -62,7 +62,7 @@
 			<blockquote>Alistair – many thanks for your years of support to the ICT. Our digital function has come a long way due to your skill, perseverance, and diplomacy! Good luck in your next role!</blockquote><p>- Ryan</p>
 		</div>
 		<div class="item watch instagram">
-			<iframe src="//instagram.com/p/pYeQnlqDnV/embed/" width="300" height="350" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+			<iframe src="//instagram.com/p/pYeQnlqDnV/embed/" width="300" height="320" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 		</div>
 		<div class="item read tweet">
 			<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/robsafar">@robsafar</a> Alistair - sad to see you leave but Viel Glück in Berlin!Have loved our chats on bikes &amp; snowy slopes - as well as the digi stuff!</p>&mdash; Lois Appleby (@LoisAppleby) <a href="https://twitter.com/LoisAppleby/statuses/479218321670545409">June 18, 2014</a></blockquote>
@@ -79,7 +79,8 @@
         var iso = new Isotope( container, {
                               // options
                               itemSelector: '.item',
-                              layoutMode: 'fitRows'
+                              layoutMode: 'fitRows',
+                              columnWidth: 300
                               });
     </script>
     </body>

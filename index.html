@@ -83,8 +83,9 @@
       
       $container.isotope({
         itemSelector: '.item',
-        layoutMode: 'masonry',
-        columnWidth: 300
+            masonry: {
+      		columnWidth: 300
+    	    }
       });
 
 	// filter items when filter link is clicked

@@ -77,21 +77,22 @@
 	</div>
     <script src="js/bootstrap.min.js"></script>
 	<script>
-        var container = document.querySelector('#container');
-        // init
-        var iso = new Isotope( container, {
-                              // options
-                              itemSelector: '.item',
-                              layoutMode: 'fitRows',
-                              columnWidth: 300
-                              });
+	    $(function(){
+      
+      var $container = $('#container');
+      
+      $container.isotope({
+        itemSelector: '.item',
+        columnWidth: 300
+      });
 
-        // filter items when filter link is clicked
+	// filter items when filter link is clicked
 	$('#filters a').click(function(){
 	  var selector = $(this).attr('data-filter');
 	  $container.isotope({ filter: selector });
 	  return false;
 	});
+    });
     </script>
     </body>
 </html>
